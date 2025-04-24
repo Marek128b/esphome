@@ -4,7 +4,7 @@
 #include "esphome/core/log.h"
 
 namespace esphome {
-namespace addressable_light {
+namespace addressableSegment {
 addressableSegment::addressableSegment(int pinNr, int segmentCount) {
   this->PIXEL_PIN = pinNr;
   this->PIXEL_COUNT = segmentCount * 3;
