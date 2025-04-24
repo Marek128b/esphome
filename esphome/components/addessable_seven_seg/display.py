@@ -30,4 +30,4 @@ async def to_code(config):
     wrapped_light = await cg.get_variable(config[CONF_ADDRESSABLE_LIGHT_ID])
     await display.register_display(var, config)
     cg.add(var.set_num_leds(config[CONF_NUM_LEDS]))
-
+    cg.add_library("adafruit/Adafruit NeoPixel@", "1.11.0")

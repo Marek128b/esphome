@@ -5,6 +5,9 @@
 
 namespace esphome {
 namespace addressableSegment {
+  
+static const char *const TAG = "addressableSegment.display";
+
 addressableSegment::addressableSegment(int pinNr, int segmentCount) {
   this->PIXEL_PIN = pinNr;
   this->PIXEL_COUNT = segmentCount * 3;
